@@ -1,10 +1,9 @@
-Feature: Workspace
+Feature: As a potential client, I need to create a workspace
 
   Scenario: create workspace successfully
     Given the user is logged in with valid email and password
-    And hace click en workspace
-    And hace click gestionar
-    And hace click crear nuevo espacio de trabajo
-    And ingresa un nombre al workpace
-    When hace click en el button crear
-    Then se visualiza el nuevo workspace en el espacio de trabajo
+    And clicks on Manage
+    And clicks on Create New Workspace
+    And enters a name for the workspace
+    When clicks on the Create button
+    Then the new workspace is displayed in the workspace area

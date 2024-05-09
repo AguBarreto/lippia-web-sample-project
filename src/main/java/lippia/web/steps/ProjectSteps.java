@@ -10,23 +10,26 @@ import static lippia.web.services.ProjectService.*;
 
 public class ProjectSteps extends PageSteps {
 
-    @And("hace click en el icono mas")
+    @And("click on the plus icon")
     public void clickOnTheButtonProject(){
         clickOnTheIconPlus();
-
     }
 
-    @And("hace click create new project")
+    @And("click on Create New Project")
     public void haceClickCreateNewProject() {
         clickOptionCreateNewProject();
     }
 
-    @When("introduce name new project")
+    @When("entering the name of the new project")
     public void introduceNameNewProject() {
         enteredNameProject();
     }
 
-    @Then("se valida el proyecto creado con el mensaje")
+    @And("click on the Create button")
+    public void haceClickEnElButtonCrear() {
+    }
+
+    @Then("the created project is validated with a message")
     public void seValidaElProyectoCreadoConElMensaje() {
         validateProjectCreated();
         deleteProject();

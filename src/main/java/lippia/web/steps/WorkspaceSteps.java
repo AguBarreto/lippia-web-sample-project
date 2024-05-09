@@ -20,34 +20,33 @@ public class WorkspaceSteps extends PageSteps {
         clickAlert();
     }
 
-
-    @And("hace click en workspace")
+    @And("And clicks on Workspace")
     public void haceClickEnWorkspace() {
         clickButtonWorkspace();
     }
 
-    @And("hace click gestionar")
+    @And("clicks on Manage")
     public void haceClickGestionar() {
         clickButtonManage();
     }
 
-    @And("hace click crear nuevo espacio de trabajo")
+    @And("clicks on Create New Workspace")
     public void haceClickCrearNuevoEspacioDeTrabajo() {
         buttonCreateNewWorkspace();
     }
 
-    @And("ingresa un nombre al workpace")
+    @And("enters a name for the workspace")
     public void ingresaUnNombreAlWorkpace() {
         sendNameWorkspaceRandom();
     }
 
 
-    @When("hace click en el button crear")
+    @When("clicks on the Create button")
     public void haceClickEnCrear()  {
         clickButtonCreate();
     }
 
-    @Then("se visualiza el nuevo workspace en el espacio de trabajo")
+    @Then("the new workspace is displayed in the workspace area")
     public void seVisualizaElNuevoWorkspaceEnElEspacioDeTrabajo() {
         validateWorkspaceCreation();
         deleteWorkspace();
