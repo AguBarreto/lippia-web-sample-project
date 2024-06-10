@@ -2,7 +2,7 @@
 Feature: Consigna Final Lippia Web
 
   Background:
-    Given The user is logged into the tracker page with the email "agustinbarreto2022@hotmail.com" and password "BBAt&P$M2uS.^.u"
+    Given The user is logged into the tracker page with the email "agustinbarreto2022@hotmail.com" and password "1234ab"
 
   @NewTrackerManual
   Scenario Outline: Create a new time tracker with a manual input option
