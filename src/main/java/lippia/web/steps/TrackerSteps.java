@@ -17,7 +17,7 @@ public class TrackerSteps extends PageSteps {
         TrackerService.setTimeEntryDescription(description);
     }
 
-    @When("The user click on Timer option")
+    @When("The user clicks on Timer option")
     public void theClientClickOnTempOption() {
         TrackerService.clickOnTempOption();
     }
